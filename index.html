@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembelajaran Pengembangan Program Visual Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="content">
+        <div id="welcome" class="page active">
+          <h1>
+            Selamat Datang di Pembelajaran Pengembangan Program Visual Sederhana
+          </h1>
+          <p>
+            Silakan pelajari contoh-contoh program visual sederhana dengan
+            menjelajahi halaman ini.
+          </p>
+          <button onclick="startLesson()">Mulai</button>
+        </div>
+        <div id="lesson1" class="page">
+          <h2>Contoh Program 1: Menampilkan Pesan Pop-up</h2>
+          <p>
+            Berikut adalah contoh program JavaScript untuk menampilkan pesan
+            pop-up (alert) pada halaman web.
+          </p>
+          <pre><code class="language-javascript">
+// JavaScript
+alert('Hello, World!');
+            </code></pre>
+          <button onclick="nextPage()">Next</button>
+        </div>
+        <div id="lesson2" class="page">
+          <h2>Contoh Program 2: Mengubah Warna Latar Belakang</h2>
+          <p>
+            Berikut adalah contoh program JavaScript untuk mengubah warna latar
+            belakang halaman web.
+          </p>
+          <pre><code class="language-javascript">
+// JavaScript
+document.body.style.backgroundColor = 'lightblue';
+            </code></pre>
+          <button onclick="nextPage()">Next</button>
+        </div>
+        <div id="lesson3" class="page">
+          <h2>Contoh Program 3: Menampilkan Gambar</h2>
+          <p>
+            Berikut adalah contoh tag HTML untuk menampilkan gambar di halaman
+            web.
+          </p>
+          <pre><code class="language-html">
+<!-- HTML -->
+&lt;img src="gambar.png" alt="Gambar" width="200" height="200"&gt;
+            </code></pre>
+          <button onclick="showQuestions()">Next</button>
+        </div>
+        <div id="questions" class="page">
+          <h2>Uji Pemahaman</h2>
+          <p>Silakan jawab pertanyaan-pertanyaan berikut:</p>
+          <div id="question1">
+            <p>Apa output yang akan ditampilkan oleh contoh program pertama?</p>
+            <input type="text" id="answer1" />
+          </div>
+          <div id="question2">
+            <p>
+              Bagaimana cara mengubah warna latar belakang halaman web seperti
+              pada contoh program kedua?
+            </p>
+            <input type="text" id="answer2" />
+          </div>
+          <div id="question3">
+            <p>
+              Apa tag HTML yang digunakan untuk menampilkan gambar seperti pada
+              contoh program ketiga?
+            </p>
+            <input type="text" id="answer3" />
+          </div>
+          <button onclick="checkAnswers()">Submit</button>
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
